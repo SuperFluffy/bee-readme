@@ -39,9 +39,27 @@ safety guarantees and well-integrated tooling.
 
 ## Milestones
 
-1. Support Trinity v2
-2. Build a node running alongside IRI
-3. Build a node running coordicide
+The Bee framework was mainly created to support the implementation of the IOTA
+[Coordicide](https://coordicide.iota.org/). As previously stated, on the path
+to Coordicide we want to make this framework as open, vetted and used as
+possible by supporting the creation of tools, clients, nodes...
+
+Here are the proposed milestones to achieve this goal.
+
+1. **Fundamental crates** - Specification and implementation of the Bee
+   fundamental crates `bee-trinary`, `bee-model` and `bee-crypto`. These are
+   the IOTA essential bricks without whom it's not possible to write anything
+   IOTA-related.
+2. **FFI** - Foreign Function Interface to make the Bee crates available to
+   other languages. The first project relying on Bee crates through FFI will be
+   Trinity v2.
+3. **Rust IRI** - Specification and implementation of the node-specific crates
+   `bee-network`, `bee-tangle`, `bee-api`, `bee-consensus`, and `bee-gossip`.
+   To demonstrate the modularity and robustness of the Bee framework, a node
+   for the current mainnet will be implemented. Some of these crates will be
+   kept for the Coordicide node.
+4. **Coordicide** - Specification and implementation of new Coordicide
+   node-specific crates as soon as research specifications are delivered.
 
 ## Contributing
 
