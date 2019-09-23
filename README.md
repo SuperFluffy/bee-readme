@@ -42,3 +42,11 @@ safety guarantees and well-integrated tooling.
 1. Support Trinity v2
 2. Build a node running alongside IRI
 3. Build a node running coordicide
+
+## Contributing
+
+Please see
+[`bee/CONTRIBUTING.md`](https://github.com/iotaledger/bee/blob/master/CONTRIBUTING.md)
+for guidelines on how to contribute. Please note that we have a Review for Comments (RFC)
+process in place to propose, discuss, and vote on new features entering the bee framework. You
+can find it at [`iotaledger/bee-rfcs`](https://github.com/iotaledger/bee-rfcs/).
