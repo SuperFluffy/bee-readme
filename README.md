@@ -71,7 +71,7 @@ Here are the proposed milestones to achieve this goal.
 
 Please see
 [`bee/CONTRIBUTING.md`](https://github.com/iotaledger/bee/blob/master/CONTRIBUTING.md)
-for guidelines on how to contribute. Please note that we have a Review for
+for guidelines on how to contribute. Please note that we have a Request for
 Comments (RFC) process in place to propose, discuss, and vote on new features
 entering the Bee framework. You can find it at
 [`iotaledger/bee-rfcs`](https://github.com/iotaledger/bee-rfcs/).
