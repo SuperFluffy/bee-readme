@@ -29,13 +29,17 @@ Going this route, we hope that improvements in either one will quickly
 propagate to all other libraries building on these, rather than having to fix
 each single implementation we encounter.
 
-Our final motiviation for writing Bee is IF's eventual goal to machines of all
-performance levels contribute to the IOTA framework, from microcontrollers and
-single-board computers, to phones, web browsers, desktop machines and servers.
-Next to C and C++, Rust is the only language that fits the requirements and has
-the community momentum to cover all these different areas. While C and C++ are
-extremely capable languages, we have opted for Rust because of its memory and
-safety guarantees and well-integrated tooling.
+Our final motiviation for writing Bee is IF's eventual goal to have machines of
+all performance levels contribute to the IOTA framework, from microcontrollers
+and single-board computers, to phones, web browsers, desktop machines and
+servers. We thus want to implement Bee's constituent libraries from the ground
+up. You should be able to import each library on its own, and each library
+should have as few dependencies as possible. Having microcontrollers in mind,
+we want these libraries to not rely on a runtime, which includes language
+runtimes such as garbage collection, but also OS integration (which, in the
+case of Rust, is provided by its `libstd` standard library). Rust is our
+language of choice because we think it fits this bill perfectly. If you want to
+read more about our choice, see the [Why Rust? section](README.md#).
 
 ## Milestones
 
@@ -71,3 +75,27 @@ for guidelines on how to contribute. Please note that we have a Review for
 Comments (RFC) process in place to propose, discuss, and vote on new features
 entering the Bee framework. You can find it at
 [`iotaledger/bee-rfcs`](https://github.com/iotaledger/bee-rfcs/).
+
+## Why Rust?
+
+This question inevitably comes up, since Rust is a relatively young language,
+so we want to answer it directly in the README.
+
+As laid out in the motivation section, we want to have all sorts of devices run
+on the IOTA network: from microcontrollers to phones and servers. We thus need
+to consider devices that run with minimal resources and do not provide an
+operating system. Microcontrollers aside, we also want energy efficiency to not
+boil our oceans and good performance when calculating hashes, and signing and
+verifying messages to make the network run well and provide a good user
+experience. These requirements alone already restrict the choice of programming
+languages to C, C++, Rust, and Ada (and probably a few others we are not aware
+of; but the ones mentioned  are the most commonly used with tooling and
+resources accessible to normal people).
+
+So, why Rust and not one of the others? While C and C++ are very powerful, they
+are also not easy to get right. Rust operates at a comparable performance while
+providing much stronger memory safety guarantees. Together with its well
+integrated modern tooling, we think it helps us iterating our designs faster
+while being more confident that our code does what we intend it to do (without
+accessing uninitialized memory, double free, use after free, null pointer
+dereference, and buffer overflows that are all security concerns).
