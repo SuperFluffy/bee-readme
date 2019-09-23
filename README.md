@@ -92,10 +92,13 @@ languages to C, C++, Rust, and Ada (and probably a few others we are not aware
 of; but the ones mentioned  are the most commonly used with tooling and
 resources accessible to normal people).
 
-So, why Rust and not one of the others? While C and C++ are very powerful, they
-are also not easy to get right. Rust operates at a comparable performance while
-providing much stronger memory safety guarantees. Together with its well
-integrated modern tooling, we think it helps us iterating our designs faster
-while being more confident that our code does what we intend it to do (without
-accessing uninitialized memory, double free, use after free, null pointer
-dereference, and buffer overflows that are all security concerns).
+So, why Rust and not one of the others? While a very interesting language with
+similar goals as Rust, Ada doesn't have a lot of momentum right now. On the
+other hand, we think Rust is one of the most exciting and best organized open
+source projects out there. While C and C++ are very powerful, they are also not
+easy to get right. Rust operates at a comparable performance while providing
+much stronger memory safety guarantees. Together with its well integrated
+modern tooling, we think it helps us iterating our designs faster while being
+more confident that our code does what we intend it to do (without accessing
+uninitialized memory, double free, use after free, null pointer dereference,
+and buffer overflows that are all security concerns).
