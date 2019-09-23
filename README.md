@@ -1,6 +1,6 @@
 # The IOTA Bee framework
 
-Bee will be a Rust framework to build IOTA nodes and tools that interact with
+Bee is a Rust framework to build IOTA nodes and tools that interact with
 the IOTA network. The final product is envisioned to be a highly modular
 collection of foundational crates that can be mixed and matched and extended
 upon.
