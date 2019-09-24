@@ -57,7 +57,12 @@ Our proposed milestones are:
 ## Contributing
 [Contributing]: #contributing
 
-Please see
+If you want to discuss Bee or have some questions about it, join us on the
+[IOTA Discord server](https://discord.iota.org/) in the `#bee-dev` and
+`#bee-discussion` channels.
+
+If you want to contribute bug reports and pull requests or suggest new
+features, please see
 [`bee/CONTRIBUTING.md`](https://github.com/iotaledger/bee/blob/master/CONTRIBUTING.md)
 for guidelines on how to contribute. Please note that we have a Request for
 Comments (RFC) process in place to propose, discuss, and vote on new features
