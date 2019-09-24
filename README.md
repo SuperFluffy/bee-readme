@@ -4,7 +4,15 @@ Bee is a Rust framework to build IOTA nodes and tools that interact with the IOT
 
 Bee may be seen as an effort to streamline the IOTA Foundation's different libraries into one fundamental collection of Rust crates. These will expose foreign function interfaces (FFIs) to be used in more high level languages, and form the basis for the next iteration of client APIs.
 
+## Outline
+
++ [Motivation]
++ [Milestones]
++ [How to contribute](#contributing)
++ [Why Rust?]
+
 ## Motivation
+[Motivation]: #motivation
 
 Our primary motivation is to make IOTA an exemplary open source project, with
 great documentation, clear examples of increasing complexity, and well-tested
@@ -31,6 +39,7 @@ collection, but also OS integration (which, in the case of Rust, is provided by
 its `libstd` standard library). 
 
 ## Milestones
+[Milestones]: #milestones
 
 The Bee framework was primarily created to support the implementation of the
 IOTA [Coordicide](https://coordicide.iota.org/). As previously stated, on the
@@ -46,6 +55,7 @@ Our proposed milestones are:
 4. **Coordicide**: Specification and implementation of new Coordicide node-specific crates once research specifications are delivered.
 
 ## Contributing
+[Contributing]: #contributing
 
 Please see
 [`bee/CONTRIBUTING.md`](https://github.com/iotaledger/bee/blob/master/CONTRIBUTING.md)
@@ -55,6 +65,7 @@ entering the Bee framework. You can find more information at
 [`iotaledger/bee-rfcs`](https://github.com/iotaledger/bee-rfcs/).
 
 ## Why Rust?
+[Why Rust?]: #why-rust
 
 The IOTA Foundation aims to allow machines of all performance levels to
 contribute to the IOTA network: from microcontrollers to phones and servers.
